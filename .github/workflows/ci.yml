@@ -15,8 +15,8 @@ jobs:
 
       - name: Set up Docker test
         run:
-          docker compose up -d
-          echo "Waiting docker to run"
+          docker compose up -d &&
+          echo "Waiting docker to run" &&
           sleep 20
 
       - name: Connection database test
