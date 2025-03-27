@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Docker test
-        run: 
-             docker compose up -d
-             echo "Waiting docker to run"
-             sleep 20
+        run:
+          docker compose up -d
+          echo "Waiting docker to run"
+          sleep 20
 
       - name: Connection database test
         run: curl localhost:5000/api/users
